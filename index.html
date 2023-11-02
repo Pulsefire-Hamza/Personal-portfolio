@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio-website</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="PulsefiRe-logos_white.png" alt="" width="170px">
+                <div class="mobile-menu-icon">
+                </div>
+                <ul>
+                    <li><a href="#header" class="active">Home</a></li>
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#services" class="active">Services</a></li>
+                    <li><a href="#portfolio" class="active">Latest Projects</a></li>
+                    <li><a href="#contact" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <img src="971.jpg">
+                <p>UI <span>/</span>UX Designer</p>
+                <h1>Hi I'm <span>Hamza</span></h1>
+                <h1>I'm a <span> Front-End Developer </span></h1>
+                <h2>And I'm <span>confident </span> and <span>  expert</span> in:</h2>
+                <span id="element"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['HTML', 'CSS', ' WEB DESIGNES',' Web Tools' , ' Cool Animations'],
+          typeSpeed: 100,
+         
+        });
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab")
+        }
+    }
+      </script>
+
+   
+<!-------------------------------------------------ABOUT ME SECTION---------------------------------------------------->
+
+
+<div id="about">
+    <div class="containers">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="4976768.jpg">
+            </div>
+            <div class="about-col-2">
+                <div>
+                <h1>ABOUT <span>ME</span> </h1>
+                <p>As a front-end developer, I possess a wealth of expertise in crafting exceptional websites. Leveraging the power of HTML and CSS, I transform creative visions into stunning digital realities. With an unwavering commitment to precision and innovation, I ensure your website not only looks visually appealing but also functions flawlessly on various devices. You can trust me to deliver an online presence that captivates your audience, leaving a lasting impression and driving your success.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                    <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                    <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>Desiginig Web/APP interface</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>HTML&CSS</span><br>Cool Designes & Animations</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>BS Artifical Intelliengce</li>
+                        <li><span>2022</span><br>Doing FULL-STACK Web Development In Software Comapny </li>
+                        <li><span>2023</span><br> Specialist at Front-End-Developer</li>
+                        
+                    </ul>
+                </div>                
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022</span><br>Makes coustoms websites for locals Companies  </li>
+                        <li><span>2023</span><br>Done Front-End at locals E-sports websites</li>                        
+                        <li><span>2023</span><br>Working for a Software Comapny as a Front-End-Developer<li>                        
+
+                        
+                    </ul>
+                </div>                
+
+            </div>
+
+        </div> 
+    </div>
+</div>
+
+<script>   
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+
+<!-----------------------------------------------------------SERVICES-------------------------------------------------->
+<section>
+    <div class="Services" id="services">
+        <div class="containner">
+            <h1 class="sub-title">My <span>Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code fa-beat-fade" style="color: #ff004f;"></i>
+                    <h2 class="thr-h">UI <span>/</span> UX </h2>
+                    <P class="thr-para">In the world of UI/UX web design, designers craft user-friendly interfaces. They focus on navigation, responsiveness, wireframing, prototypes, aesthetics, typography, color palettes, usability, accessibility, user flows, mobile-first, feedback loops, gestures, consistency, user research, and information architecture. These elements ensure a cohesive, engaging, and accessible user experience.<P>
+                    <a href="https://careerfoundry.com/en/blog/ux-design/the-difference-between-ux-and-ui-design-a-laymans-guide/" class="read">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple fa-beat" style="color: #ff004f"></i>
+                    <h2 class="thr-h">WEB <span>DESIGNES</span> </h2>
+                    <P class="thr-para">In the realm of web design, I bring expertise in crafting visually appealing and user-centric digital interfaces. My skills encompass responsive layouts, typography, color theory, and interaction design. I'm adept at wireframing, prototyping, and user testing, ensuring websites are not only aesthetically pleasing but also highly usable and accessible.</P>
+                    <a href="https://www.interaction-design.org/literature/topics/web-design" class="read">Learn more</a>
+                </div>
+            
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<!-------------------------------------------LATEST PROJECTS ON-------------------------------------------------------->
+
+<section>
+    <div id="portfolio"  id="project">
+        <div class="main-text" id="project">
+            <h2>Latest <span>Project</span></h2>
+            <div class="portfolio-content">
+                <div class="rokw">
+                    <img src="4884785.jpg" alt="">
+                    <div class="layerr">
+                        <h5>WEB DEVELOPING</h5>
+                        <p>As a front-end web developer, I specialize in bringing web designs to life. My skills encompass HTML, CSS, JavaScript, and responsive design. I create dynamic, user-friendly websites that deliver seamless interactions and outstanding visual appeal, ensuring a delightful online experience for users.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square fa-beat" style="color: #ff004f;"></i></a>
+                    </div>
+                </div>
+                <div class="rokw">
+                    <img src="5757453.jpg" alt="">
+                    <div class="layerr">
+                        <h5>UI/UX</h5>
+                        <p>In the domain of UI/UX design, I excel in creating intuitive and visually pleasing digital experiences. My expertise includes user research, wireframing, prototyping, and a strong focus on accessibility. I craft interfaces that prioritize user needs and provide seamless interactions for exceptional user satisfaction.</p>
+                       <a href="#"> <i class="fa-solid fa-code fa-beat-fade" style="color: #ff004f;"></i></a>
+                    </div>
+                </div>
+                <div class="rokw">
+                    <img src="web-design-technology-browsing-programming-concept (1).jpg" alt="">
+                    <div class="layerr">
+                        <h5>WEB DESIGNES</h5>
+                        <p>In the realm of web design, I am a seasoned professional with a keen eye for aesthetics and a deep understanding of user experience principles. My expertise spans HTML, CSS, responsive layouts, and intuitive interfaces, ensuring captivating and user-friendly websites. I approach each project with a commitment to excellence, delivering designs that seamlessly blend creativity and functionality.<p>
+                       <a href="#"> <i class="fa-solid fa-crop-simple fa-beat" style="color: #ff004f"></i></a>
+                    </div>
+                </div>
+                <div class="rokw">
+                    <img src="programming-background-collage.jpg" alt="">
+                    <div class="layerr">
+                        <h5>HTML</h5>
+                        <p>I am an HTML expert, adept at creating impeccable web structures. My mastery encompasses semantic tags, responsive design, and efficient coding practices, ensuring top-notch website functionality and user experience.</p>
+                     <a href="#"><i class="fa-brands fa-html5 fa-bounce" style="color: #ff004f;"></i></a>
+                    </div>
+                </div>
+                <div class="rokw">
+                    <img src="7040951.jpg" alt="">
+                    <div class="layerr">
+                        <h5>CSS</h5>
+                        <p>I excel in CSS, expertly shaping web aesthetics. My skills encompass responsive layouts, animations, and precision styling, ensuring visually stunning and engaging websites.</p>
+                        <a href="#"><i class="fa-brands fa-css3-alt fa-bounce" style="color: #ff004f;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----------------------------------------------------CONTACT ME------------------------------------------------------->
+<div class="contact" id="contact">
+    <h1>CONTACT <SPAN>ME</SPAN> </h1>
+    <div class="f-sec">
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn"> SUBMIT </button>
+        </form>
+        <span id="msg">Hello</span>
+    </div>
+            <div class="c-left">
+                <p><i class="fa-solid fa-paper-plane fa-shake" style="color: #ff004f;"></i>pulsefirehamza@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone fa-shake" style="color: #ff004f;"></i>03357510556</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/humza.tariq.372"><i class="fa-brands fa-facebook fa-beat" ></i></a>
+                    <a href="https://www.instagram.com/humzatariq279/"><i class="fa-brands fa-instagram fa-beat" ></i></i></a>
+                    <a href="https://www.linkedin.com/in/pulse-fire-3960b5293/"><i class="fa-brands fa-linkedin fa-beat" ></i></a>
+                    <a href="https://twitter.com/HamzaTa47079002"><i class="fa-brands fa-twitter fa-beat" ></i></a>
+                    <a href="https://github.com/Pulsefire-Hamza"><i class="fa-brands fa-github fa-beat" ></i></a>
+                    <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord fa-beat"></i><a>
+                </div>
+            </div>
+        </div>
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyEXIZPvo0MuMlJsP4h0I7n2Y-7Oej9P94ohqQyXTitbUwFhgXNsePddEsNIRodLcoJLw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHtml ="Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = "Message sent sucessfully"
+
+            },5000)
+            form.reset()
+ 
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<div class="copyright">
+    <p>Copyright &#169; Hamza.<i class="fa-solid fa-heart"></i> "You've reached the end of my portfolio journey; let's begin our next adventure together!" </p>
+</div>
+</body>
+</html>

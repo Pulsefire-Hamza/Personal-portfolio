@@ -1,0 +1,526 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+</style>
+
+
+*{
+padding: 0;
+margin: 0;
+font-family: 'poppins' , sans-serif;
+box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+   background-color: #262626;
+   color: #fff;
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+     padding: 10px 5%;
+}
+
+nav{
+    display: flex;
+ align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    
+}
+.logo{width: 150px;}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  position: relative;
+} 
+nav ul li a.active{
+background: linear-gradient(rgb(19, 19, 255),rgb(255, 3, 3) );
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+
+.header-text{
+    margin-top: 5%;
+}
+.header-text p{
+        font-size: larger;
+}
+.header-text p span{
+    color: #ff004f;
+}
+.header-text h1{
+   font-size: 40px;}
+
+   .header-text h1 span{
+    color: #ff004f;
+   }
+
+   .header-text h2 span{
+    color: #ff004f;
+   }
+   .header-text img{
+    width: 40%;
+    float: right;
+    background-color: transparent;
+    border-radius: 80px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #ff004f,
+    1px 1px 40px #ff1d64
+   }
+nav.fa-solid{
+    color: #ff004f;
+}
+   #element{
+    font-size: 60px;
+    color: #ff004f;
+   }
+   /* ---------------------------------------------------HERES I START PART 2 *--------------------------------------*/
+  #about{
+padding-bottom: 2%; 
+color: whitesmoke
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1{ width: 100%;
+          border-radius: 15px;}
+
+.about-col-1 img{
+    width: 100%;
+    background-color: transparent;
+    border-radius: 80px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #ff004f,
+    1px 1px 40px #ff1d64
+}          
+ .about-col-2{
+ flex-basis: 60%;
+}
+
+.about-col-2 p{  font-size: 20px;   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  }
+
+.about-col-2 h1{
+    font-size: 60px;
+}
+.about-col-2 h1 span{
+    color: #ff004f;
+}
+
+ .sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+ }         
+
+ .tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+ }
+
+ .tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    
+ }
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+list-style: none;
+margin: 10x 0;
+}
+
+.tab-contents ul li span{
+    color: #ff004f;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.styling-it{
+    border: 2px solid firebrick;
+    padding-top: 1%;  
+}
+/*---------------------------------------------------SERVICES---------------------------------------------------------*/
+#services
+{
+    color:aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.sub-title{
+text-align: center;
+font-size: 60px;
+padding-bottom: 70px;
+}
+.sub-title span{
+    text-align: center;
+    font-size: 60px;
+    color: #ff004f;
+}
+.containeer{
+    padding: 90px;
+}
+.services-list{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,mimax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #ff004f,
+    1px 1px 40px #ff1d64
+}
+.services-list div i {
+font-size: 50px;
+margin-bottom: 30px;
+color: #ff004f;
+}
+.services-list div h2{font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a {
+    text-decoration: none;
+    color: #080808;
+    font-size:12px ;
+    margin-top: 20px;
+    display: inline-block;
+}
+.read {
+    background-color: crimson;
+    color: white;
+    border-radius: 15px;
+    padding: 4px 12px;   
+}
+.read:hover{
+    font-size: 20px;
+    box-shadow: 0 0 5px crimson,
+    0 0 25px crimson,0 0 50 crimson,
+    0 0 100px crimson,0 0 200px crimson
+}
+.services-list div :hover{
+    transform: translateY(-10px);
+}
+.thr-para{
+    font-size: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.thr-h{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.thr-h span{
+    color: #ff004f;
+}
+/*-----------------------------------------------PROJECTS-------------------------------------------------------------*/
+.main-text{
+    padding-top: 10px;
+    margin-bottom: 200px;
+}
+.main-text h2{
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+}
+.main-text h2 span{
+    color: #ff004f;
+}
+.portfolio-content{
+ display: flex;
+    grid-template-columns: repeat(auto-fit,mimax(259px,1fr));
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+.rokw img{
+    width: 100%;
+    border-radius: 80px;
+    display: block;
+    background-color: transparent;
+    padding: 4px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 10px #ff004f,
+    1px 1px 40px #ff1d64
+}
+.layerr{
+    cursor: pointer;
+}
+.layerr h5{
+    font-size: x-large;
+    color: #ff004f;
+}
+.layerr p{
+    font-size: 20px;
+}
+.layerr i{
+    font-size: 40px;
+}
+.layerr:hover{
+    transform: translateY(-10px);
+}
+/*----------------------------------------------CONTACT ME------------------------------------------------------------*/
+.contact h1{
+    font-size: 60px;
+    padding-left: 35%;
+} 
+.contact h1 span{
+    color: #ff004f;
+}
+.c-left p{  
+    font-size: 20px;
+    padding-top: 2%;
+}
+.c-left i{
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 15px;
+    display: inline-block;
+    transition: transform 0.5s;
+    color: white;
+}
+.social-icons a :hover{
+    color: #ff1d64;
+    transform: translateY(-10px);
+}
+.f-sec{
+    float: right;
+}
+form input,form textarea{
+    width: 70%;
+    border: 0;
+    outline: none;
+    background: black ;
+    padding: 15px ;
+   margin: 15px ;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+}
+form button {
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 16%;
+    padding: 14px 60px;
+    font-size: 18px;
+    border-radius: 20px;
+    background:  #f06
+}
+#msg{
+    padding-top: 20px;
+    display: none;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    color: #ffffff;
+    background-color: #262626;
+    font-weight: 300;
+    margin-top: 20%;
+    transition: transform 0.5s;
+}
+.copyright :hover{
+    color: #ff1d64;
+    transform: translateY(-5px);
+}
+/*-------------------------------------------------MOBILE OR OTHER VIWERESPONSIVE-------------------------------------*/
+/* Mobile Styles */
+/* Add your existing CSS styles here */
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+
+    }
+
+    /* Header styles for mobile */
+    #header {
+        height: auto;
+        padding: 20px 0; /* Add some padding to the header on smaller screens */
+        text-align: center; /* Center-align header content */
+        background-position: top;
+    }
+
+    .container {
+        padding: 10px 5%; /* Reduce container padding for smaller screens */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack navigation links vertically for mobile */
+        align-items: center; /* Center-align navigation links */
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .header-text img {
+        width: 70%; /* Adjust image size for smaller screens */
+        float: none; /* Remove float on mobile */
+        margin: 0 auto; /* Center-align the image */
+    }
+
+    .header-text h1 {
+        font-size: 28px; /* Reduce font size for smaller screens */
+    }
+
+    .header-text h2 {
+        font-size: 18px; /* Reduce font size for smaller screens */
+    }
+    #element{
+        font-size: 30px;
+    }
+    /* About section styles for mobile */
+    #about {
+        padding-bottom: 2%;
+        margin-top: 20%;
+    }
+
+    .about-col-1 img {
+        width: 150%;
+        border-radius: 20px;
+        margin-left: 50%;
+    }
+
+    .about-col-2 {
+        flex-basis: 100%; /* Expand to full width on mobile */
+        padding: 20px 0; /* Add some padding for mobile */
+    }
+
+    .tab-titles {
+        flex-direction: column; /* Stack tab titles vertically for mobile */
+        margin: 20px 0;
+    }
+
+    .tab-links {
+        margin: 5px 0; /* Reduce margin for tab links on mobile */
+    }
+
+    /* Services section styles for mobile */
+    #services {
+        padding-bottom: 4%;
+    }
+
+    .services-list {
+        flex-direction: column; /* Stack services vertically for mobile */
+        align-items: center; /* Center-align services */
+    }
+
+    .services-list div {
+        width: 70%; /* Expand services to full width on mobile */
+    }
+
+    .read {
+        margin-top: 10px;
+    }
+
+    /* Latest Projects section styles for mobile */
+    .main-text {
+        margin-bottom: 100px; /* Reduce margin for mobile */
+    }
+
+    .portfolio-content {
+        flex-direction: column; /* Stack project content vertically for mobile */
+        align-items: center; /* Center-align project content */
+    }
+
+    .rokw img {
+        width: 100%;
+    }
+
+    /* Contact section styles for mobile */
+    .contact h1 {
+        padding-left: 0; /* Remove padding for mobile */
+        text-align: center; /* Center-align contact heading */
+    }
+
+    .contact h1 span {
+        color: #ff004f;
+    }
+
+    .c-left {
+        text-align: center; /* Center-align contact information on mobile */
+    }
+    .c-left i{
+        float: left;
+       
+    }
+    .tab-links.active-link{
+
+    }
+
+    /* Copyright section styles for mobile */
+    .copyright {
+        margin-top: 0; /* Remove margin for mobile */
+    }
+  
+}
+
+/*--------------------------------------------------OKHAY-THATS-ALL---------------------------------------------------*/
